@@ -49,7 +49,15 @@
         <div>
           <button type="submit" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+<<<<<<< HEAD
+              <!-- <LockClosedIcon class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" /> -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+
+=======
               <LockClosedIcon class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
+>>>>>>> 67e45ad07d1458c27fb18396f8ec6eb5f4b1d9b7
             </span>
             Sign in
           </button>
@@ -59,7 +67,11 @@
 </template>
 
 <script setup>
+<<<<<<< HEAD
+
+=======
 import { LockClosedIcon } from '@heroicons/vue/20/solid'
+>>>>>>> 67e45ad07d1458c27fb18396f8ec6eb5f4b1d9b7
 import GuestLayout from '../components/GuestLayout.vue';
 
 </script>
