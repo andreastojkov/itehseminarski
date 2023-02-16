@@ -40,5 +40,4 @@
     
   <script setup>
     import GuestLayout from '../components/GuestLayout.vue';
-    // import {LockClosedIcon} from '@heroicons/vue/solid'
   </script> 
