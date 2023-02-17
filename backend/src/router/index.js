@@ -26,7 +26,7 @@ const routes = [
         name: 'login',
         component: Login,
         meta:{
-          requireGuest:true
+          requiresGuest:true
         }
       },
       {
@@ -34,15 +34,15 @@ const routes = [
         name: 'requestPassword',
         component: RequestPassword,
         meta:{
-          requireGuest:true
+          requiresGuest:true
         }
       },
       {
-        path: '/reset-password',
+        path: '/reset-password/:token',
         name: 'resetPassword',
         component: ResetPassword,
         meta:{
-          requireGuest:true
+          requiresGuest:true
         }
       },
       {
@@ -62,10 +62,11 @@ const router = createRouter({
 
   
 router.beforeEach((to, from, next) => {
+  console.log(to);
   if (to.meta.requiresAuth && !store.state.user.token) {
-    next({name: 'login'})
+    next({name: '/login'})
   } else if (to.meta.requiresGuest && store.state.user.token) {
-    next({name: 'app.dashboard'})
+    next({name: '/app.dashboard'})
   } else {
     next();
   }
